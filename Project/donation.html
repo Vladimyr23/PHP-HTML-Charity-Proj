@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+		
+			<title>Good Gym Data Driven Web</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<meta name="Keywords" content="charity, donation, help">
+			<meta name="Author" content="VVV">
+			<link rel="stylesheet" href="css/style.css" type="text/css" />
+			<script src="js/visible.js" type="text/javascript"></script>
+			<script src="js/login_close.js" type="text/javascript"></script>
+			
+		</head>
+	
+		<body>
+			<div id="box">
+			<!-- ************************************ 
+			==========Page Container===========
+			************************************* -->
+			
+				<div id="topsection">
+				<!-- ===================================
+				======Topsection Container=====
+				==================================== -->
+					
+					<div id="banner">
+					<!-- ===================================
+					======Banner and Logo Container=====
+					==================================== -->
+						
+						<img src="img/logo.png" alt="Good Gym Logo" />
+						<!--img src="images/goodgymBanner.png" alt="Good Gym Banner" /-->
+						
+					</div>
+					
+					
+					<div id="nav">
+					<!-- ==================================
+					======Navigation Bar Container=====
+					=================================== -->				
+						<ul class="topnav">
+							<li><a class="active" href="index.html"><b>Home</b></a></li>
+							<li><a href="register.html">Register</a></li>
+							<li><a href="donation.html">Donations</a></li>
+							<li>
+							<?php include "php/log_check.php";?>
+							</li>
+						</ul>
+						<!-- The Modal -->
+						<div id="id01" class="modal">
+							<span onclick="document.getElementById('id01').style.display='none'" 
+							class="close" title="Close Modal">&times;</span>
+
+						  <!-- Modal Content -->
+						  <form class="modal-content animate" action="php/login.php" method="post">
+							<div class="imgcontainer">
+								<img src="img/img_avatar2.png" alt="Avatar" class="avatar">
+							</div>
+
+							<div class="modal_cont">
+								<label><b>Your email</b></label>
+								<input type="text" placeholder="Enter your email" name="e_mail" required><br>
+								<label><b>Password</b></label>
+								<input type="password" placeholder="Enter Password" name="psw" required>
+								
+								<div class="buttons_container">
+									<hr />
+									<button name="login" type="submit"><b>Login</b></button>
+									<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn"><b>Cancel</b></button>							  
+								</div>
+							</div>
+						  </form>
+						</div><script src="js/login_close.js" type="text/javascript"></script>
+					</div>
+				</div>
+				
+				<div id="contentwrapper">
+				<!-- ===================================
+				======Content Container=====
+				==================================== -->				
+					<!--<img src="img/carousel.jpg" alt="Charity Marathon Picture" align="middle" />-->
+					<img src="img/charity.jpg" alt="Good Gym Donations picture" />					
+						<p id="logged_in">Welcome, <?php include "php/log_check.php";?>
+                        
+                        !</p>
+						<?php  
+                        /*echo $user_fname . $user_surename; 
+						//session_start();
+						//echo $_SESSION['loggedIn'];
+						if (isset($_SESSION['login_user'])){ 
+						 ?>
+							<script language="JavaScript" src="js/visible.js" type="text/javascript"></script>';
+						<?php  
+						 }*/
+						 ?>
+					<form action="php/donation.php" method="post" id="donation_form">
+					<!--If you click the "Submit" button, the form-data will be sent to a page called "php/donation.php-->
+							<fieldset>								
+								<label for="donate" >How much would you like to donate?</label><br>
+								<input type="text" name="donate" id="donate" maxlength="20" /><br><br>
+								<input type="submit" value="Submit">
+							</fieldset>
+					</form>									
+				</div>
+				
+				<div id="footer">
+				<!-- =========================
+				======Footer Container=====
+				=========================== -->
+					<a href="http://www.vladyes.ru">&copy;&nbsp;Vladimir Yesipov</a>
+				</div>
+			
+			</div>
+		</body>		
+	</html>
