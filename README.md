@@ -2,7 +2,7 @@
 
 Simple web-Site in HTML5 of Dignans Cafe
 
-Screenshots examples:
+Screenshot examples:
 
 ![Home Page](/Design/front_page.jpg?raw=true "Home Page")
 
