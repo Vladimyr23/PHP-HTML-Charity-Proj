@@ -1,5 +1,9 @@
 # PHP-HTML-Charity-Proj
 
-Initial Screen
+Simple web-Site in HTML5 of Dignans Cafe
 
-![Initial Screen](/screenshots/vbNet_BikeShop1.png?raw=true "Initial Screen")
+Screenshots examples:
+
+![Home Page](/screenshots/dignansHome.png?raw=true "Home Page")
+
+![Breakfast Page](/screenshots/dignansBreakfast.png?raw=true "Breakfast Page")
