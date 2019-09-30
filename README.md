@@ -4,6 +4,6 @@ Simple web-Site in HTML5 of Dignans Cafe
 
 Screenshots examples:
 
-![Home Page](/screenshots/dignansHome.png?raw=true "Home Page")
+![Home Page](/Dignans screenshots/dignansHome.png?raw=true "Home Page")
 
-![Breakfast Page](/screenshots/dignansBreakfast.png?raw=true "Breakfast Page")
+![Breakfast Page](/Dignans screenshots/dignansBreakfast.png?raw=true "Breakfast Page")
